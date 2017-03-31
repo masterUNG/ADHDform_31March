@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="my_margin">60dp</dimen>
+    <dimen name="h2">18sp</dimen>
+    <dimen name="my_margin2">30dp</dimen>
+    <dimen name="height_layout">150dp</dimen>
+    <dimen name="h1">50sp</dimen>
+    <dimen name="icon">120dp</dimen>
+
+</resources>

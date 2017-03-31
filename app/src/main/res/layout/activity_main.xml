@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="adhd.sirikan.pimpicha.adhdform.MainActivity">
+    <LinearLayout
+        android:layout_marginTop="@dimen/my_margin"
+        android:layout_marginLeft="@dimen/my_margin"
+        android:layout_marginRight="@dimen/my_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+           <ImageView
+               android:src="@mipmap/ic_user"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+            <EditText
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="text"
+                android:hint="@string/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtUser"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+           <ImageView
+               android:src="@mipmap/ic_password"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+            <EditText
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/edtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+        <TextView
+            android:textSize="@dimen/h2"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/new_register"
+            android:textColor="#68c69f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNewRegister"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/btnLogin"
+        />
+
+    <Button
+    android:id="@+id/toSnap"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="52dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginStart="48dp"
+    android:text="Go to snap"
+    android:layout_above="@+id/btnLogin"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/toThass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goto thass"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignBottom="@+id/toSnap"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_marginBottom="7dp" />
+
+
+</RelativeLayout>
